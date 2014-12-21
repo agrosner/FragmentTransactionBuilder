@@ -119,6 +119,7 @@ public class FragmentTransactionBuilder {
 
     public FragmentTransactionBuilder fragment(Fragment fragment) {
         mFragment = fragment;
+        mFragmentClass = mFragment.getClass();
         return this;
     }
 
@@ -221,6 +222,7 @@ public class FragmentTransactionBuilder {
             e.printStackTrace();
         } catch (ClassNotFoundException e) {
             e.printStackTrace();
+
         } catch (IllegalAccessException e) {
             e.printStackTrace();
         }
